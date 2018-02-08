@@ -1,0 +1,10 @@
+pykafka
+click
+pyyaml
+py-zabbix
+greenlet
+colorlog
+structlog
+flask
+gevent
+kafka-python
