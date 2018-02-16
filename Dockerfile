@@ -1,10 +1,10 @@
 FROM alpine
 
-RUN apk update && apt add python3
+RUN apk update && apk add python3
 
 COPY ./ /tmp/akfak
 RUN cd /tmp/akfak && \
-    pip install -r requirements.txt && \
-    pip install .
+    pip3 install -r requirements.txt && \
+    pip3 install .
 
 ENTRYPOINT ["akfak"]
